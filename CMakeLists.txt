@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.23)
-project(Refactor)
+project(Connect4)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Refactor main.cpp)
+file(GLOB SOURCES include/*.h src/*.cpp)
+
+add_executable(Connect4 ${SOURCES})
