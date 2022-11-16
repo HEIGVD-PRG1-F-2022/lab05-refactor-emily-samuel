@@ -3,13 +3,12 @@ From https://github.com/HEIGVD-PRG1-F-2022/lab-03-puissance-4-quentin-guillaumed
 
 ```mermaid
 classDiagram
-	direction LR
 	Game --o Display
 	Game --o Input
 	class Display {
-		+static clearScreen()
-		+static getColoredText(string text, Color color)
-		+static printUTF8Char(int code)
+		+static void clearScreen()
+		+static string getColoredText(string text, Color color)
+		+static void printUTF8Char(int code)
 	}
 	class Input {
 		+static int askUserInt(int min)
