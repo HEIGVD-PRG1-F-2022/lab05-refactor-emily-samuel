@@ -1,6 +1,6 @@
-//
-// Created by emily on 16.11.2022.
-//
+/**
+ * Created by emily on 16.11.2022.
+ */
 
 #ifndef CONNECT4_INPUT_H
 #define CONNECT4_INPUT_H
