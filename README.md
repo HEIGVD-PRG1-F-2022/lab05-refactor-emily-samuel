@@ -9,6 +9,7 @@ classDiagram
 		+static void clearScreen()
 		+static string getColoredText(string text, Color color)
 		+static void printUTF8Char(int code)
+		+static void print2DArray(const vector vector~int~ &array, map~int, char~ charmap, map~int, string~ colormap, bool borders, string borderColor)
 	}
 	class Input {
 		+static int askUserInt(int min)
@@ -22,12 +23,11 @@ classDiagram
 		-vector vector~char~ board
 		+start()
 		+print() const
-		+static bool isMoveValid(const int column)
-		+static int askPlayerMoveAndValidate()
-		+void displayBoard() const
+		+bool isMoveValid(const int column)
+		+int askPlayerMoveAndValidate()
 		+static void displayWinner(Player player)
 		+static string getEscapedColoredCoin(Player player)
-		+static void diplayRules()
+		+static void displayRules()
 		+bool checkVictory(int x, int y) const
 		-bool checkHorizontal(int x, int y) const
 		-bool checkVertical(int x, int y) const
