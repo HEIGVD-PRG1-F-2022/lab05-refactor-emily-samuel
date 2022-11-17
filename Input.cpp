@@ -15,7 +15,7 @@ int Input::askUserInt(int min) {
         while (!(cin >> value)) {
             cout << "The value you entered is not an integer, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min) {
             break;
@@ -32,7 +32,7 @@ int Input::askUserInt(int min, int max) {
         while (!(cin >> value)) {
             cout << "The value you entered is not an integer, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min && value <= max) {
             break;
@@ -49,7 +49,7 @@ float Input::askUserFloat(float min) {
         while (!(cin >> value)) {
             cout << "The value you entered is invalid, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min) {
             break;
@@ -66,7 +66,7 @@ float Input::askUserFloat(float min, float max) {
         while (!(cin >> value)) {
             cout << "The value you entered is invalid, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min && value <= max) {
             break;
@@ -83,7 +83,7 @@ double Input::askUserDouble(double min) {
         while (!(cin >> value)) {
             cout << "The value you entered is invalid, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min) {
             break;
@@ -100,7 +100,7 @@ double Input::askUserDouble(double min, double max) {
         while (!(cin >> value)) {
             cout << "The value you entered is invalid, try again: ";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n   ');
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (value >= min && value <= max) {
             break;
